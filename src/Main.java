@@ -21,14 +21,17 @@ public class Main {
 
 
 
-        int year = 1583;
+        int year = 2004;
         if (year % 4 == 0) {
             System.out.println(year + (" год является выоскосным"));
-        } else if ((year % 100 != 0) && (year % 400 == 0)) {
+        } else if (year % 100 != 0) {
+            System.out.println(year + (" год не является выоскосным"));
+        }else if (year % 400 == 0) {
             System.out.println(year + (" год является выоскосным"));
         } else {
             System.out.println(year + (" год не является выоскосным"));
         }
+
 
 
 
@@ -45,38 +48,17 @@ public class Main {
 
 
 
-        char monthNumber = 5;
+        char monthNumber = 1;
         switch (monthNumber) {
-            case 1 :
+            case 1 : case 2 : case 12 :
                 System.out.println("Зима");
                 break;
-            case 2 :
-                System.out.println("Зима");
-                break;
-            case 12 :
-                System.out.println("Зима");
-                break;
-            case 3:
-                System.out.println("Весна");
-            case 4:
-                System.out.println("Весна");
-            case 5:
+            case 3: case 4: case 5:
                 System.out.println("Весна");
                 break;
-            case 6:
+            case 6: case 7: case 8:
                 System.out.println("Лето");
-                break;
-            case 7:
-                System.out.println("Лето");
-            case 8:
-                System.out.println("Лето");
-            case 9:
-                System.out.println("Осень");
-                break;
-            case 10:
-                System.out.println("Осень");
-                break;
-            case 11:
+            case 9: case 10: case 11:
                 System.out.println("Осень");
                 break;
 
